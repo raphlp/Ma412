@@ -108,7 +108,7 @@ run_baseline(train, val, Y_train, Y_val, label_names)
 
 | Model                        | Micro F1 | Macro F1 | Comments                 |
 | ---------------------------- | -------- | -------- | ------------------------ |
-| TF-IDF + Logistic Regression | 0.49     | 0.09     | Fast, simple baseline    |
+| TF-IDF + Logistic Regression | 0.31     | 0.09     | Fast, simple baseline    |
 | BERT (transformers)          | 0.35     | 0.12     | Much better, contextual  |
 
 Full evaluation details, error analysis, and model comparison are included in the report (`/report/`).
