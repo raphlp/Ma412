@@ -41,13 +41,12 @@ We implemented and compared two main methods:
 
 ```text
 .
-├── data/                  # Parquet data files (not tracked by git)
+├── data/                  # Parquet data files
 ├── src/                   # Source code (models, utilities)
 │     └── models.py
 ├── main.py                # Main launcher: menu, training, evaluation
 ├── requirements.txt       # Python dependencies
-├── report/                # Project report (LaTeX/PDF), figures
-├── .gitignore             # Ignore rules
+├── report/                # Project report (PDF), figures
 └── README.md
 ```
 
