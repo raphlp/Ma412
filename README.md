@@ -45,7 +45,7 @@ We implemented and compared two main methods:
 ├── models.py              # Models: TF-IDF and BERT
 ├── main.py                # Main launcher: menu, training, evaluation
 ├── requirements.txt       # Python dependencies
-├── report/                # Project report (PDF), figures
+├── report.pdf             # Project report (PDF), figures
 └── README.md
 ```
 
