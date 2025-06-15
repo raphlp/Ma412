@@ -104,7 +104,7 @@ run_baseline(train, val, Y_train, Y_val, label_names)
 -   Saves reports and prediction examples
 -   Extensible for new models and experiments
 
-## Results (Sample)**
+## Results (full files)
 
 | Model                        | Micro F1 | Macro F1 | Comments                 |
 | ---------------------------- | -------- | -------- | ------------------------ |
