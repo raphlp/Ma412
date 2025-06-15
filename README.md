@@ -122,10 +122,10 @@ Full evaluation details, error analysis, and model comparison are included in th
 
 To allow for rapid testing and reproducibility, we also trained and evaluated the models on **subsamples** of the dataset (`1500` articles for training, `400` for validation). This is useful for debugging and for users without access to significant computing resources. However, these reduced-size experiments are much more challenging for multi-label classification, especially for BERT.
 
-| Model                        | Micro F1 | Macro F1 | Comments                 |
-| ---------------------------- | -------- | -------- | ------------------------ |
-| TF-IDF + Logistic Regression | 0.12     | 0.06     | Baseline on 1500/400     |
-| BERT (transformers)          | 0.05     | 0.01     | Small sample, much lower |
+| Model                        | Micro F1 | Macro F1 | Comments                             |
+| ---------------------------- | -------- | -------- | -------------------------------------|
+| TF-IDF + Logistic Regression | 0.12     | 0.06     | More robust on small samples         |
+| BERT (transformers)          | 0.05     | 0.01     | Struggles to contextualize with few data |
 
 **Note**:  
 Performance is significantly lower on small subsamples due to the high label imbalance and limited examples per class.  
@@ -147,7 +147,7 @@ Available in `/report/`.
 
 ---
 
-## Author / Credits
+## Author
 
 Raphaël Laupies  
 IPSA, MA412, 2025
