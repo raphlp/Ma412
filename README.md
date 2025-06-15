@@ -63,9 +63,10 @@ We implemented and compared two main methods:
     ```bash
     pip install -r requirements.txt
     ```
+    **If you are using Spyder (Anaconda):**  
+    It is strongly recommended to launch the following command **in the Anaconda Prompt** to ensure the packages are installed in the correct environment (the one used by Spyder):
 
-3.  Add your data:  
-    Place your `train` and `val` `.parquet` files in the `data/` folder.
+
 
 
 Launch the main script and follow the menu:
