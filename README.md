@@ -42,8 +42,7 @@ We implemented and compared two main methods:
 ```text
 .
 ├── data/                  # Parquet data files
-├── src/                   # Source code (models, utilities)
-│     └── models.py
+├── models.py              # Models: TF-IDF and BERT
 ├── main.py                # Main launcher: menu, training, evaluation
 ├── requirements.txt       # Python dependencies
 ├── report/                # Project report (PDF), figures
