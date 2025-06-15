@@ -88,10 +88,18 @@ Outputs:
 ## Example Code (Baseline)
 
 ```python
-from src.models import run_baseline
+from models import run_baseline, run_bert
 
-# Load your dataframes train, val and binarized labels Y_train, Y_val, label_names
-run_baseline(train, val, Y_train, Y_val, label_names)
+warnings.filterwarnings("ignore")
+
+MIN_COUNT = 30
+TRAIN_SAMPLE = 1500
+VAL_SAMPLE = 400
+
+if __name__ == "__main__":
+    # Load data from parquet files
+    train = pd.read_parquet("data/train-00000-of-00001-b21313e511aa601a.parquet")
+    val = pd.read_parquet("data/val-00000-of-00001-66ce8665444026dc.parquet")
 ```
 
 ## Features
