@@ -109,7 +109,12 @@ run_baseline(train, val, Y_train, Y_val, label_names)
 | Model                        | Micro F1 | Macro F1 | Comments                 |
 | ---------------------------- | -------- | -------- | ------------------------ |
 | TF-IDF + Logistic Regression | 0.31     | 0.09     | Fast, simple baseline    |
-| BERT (transformers)          | 0.35     | 0.12     | Much better, contextual  |
+| BERT (transformers)          | 0.37     | 0.13     | Better, contextual       |
+
+**Note**:  
+The results reported above (and in the detailed report) were obtained on the **full dataset**, which required several hours of training.  
+For reproducibility, the scripts fix all random seeds and allow you to rerun experiments on **smaller samples** as defined in the main script.  
+Sample-based results (with the same metrics and structure) will be printed when you run the code using the default settings, but may differ slightly from the scores above, as those were computed on the full-scale benchmark.
 
 Full evaluation details, error analysis, and model comparison are included in the report (`/report/`).
 
