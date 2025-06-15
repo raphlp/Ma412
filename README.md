@@ -114,9 +114,23 @@ run_baseline(train, val, Y_train, Y_val, label_names)
 **Note**:  
 The results reported above (and in the detailed report) were obtained on the **full dataset**, which required several hours of training.  
 For reproducibility, the scripts fix all random seeds and allow you to rerun experiments on **smaller samples** as defined in the main script.  
-Sample-based results (with the same metrics and structure) will be printed when you run the code using the default settings, but may differ slightly from the scores above, as those were computed on the full-scale benchmark.
+Sample-based results (with the same metrics and structure) will be printed when you run the code using the default settings, but will differ  from the scores above, as those were computed on the full-scale benchmark.
 
 Full evaluation details, error analysis, and model comparison are included in the report (`/report/`).
+
+## Results on Small Samples
+
+To allow for rapid testing and reproducibility, we also trained and evaluated the models on **subsamples** of the dataset (`1500` articles for training, `400` for validation). This is useful for debugging and for users without access to significant computing resources. However, these reduced-size experiments are much more challenging for multi-label classification, especially for BERT.
+
+| Model                        | Micro F1 | Macro F1 | Comments                 |
+| ---------------------------- | -------- | -------- | ------------------------ |
+| TF-IDF + Logistic Regression | 0.12     | 0.06     | Baseline on 1500/400     |
+| BERT (transformers)          | 0.05     | 0.01     | Small sample, much lower |
+
+**Note**:  
+Performance is significantly lower on small subsamples due to the high label imbalance and limited examples per class.  
+The random seed fixed in the code will reproduce exactly these results on these small sample settings.
+For full-scale results and analysis, see the table above and the full report (`/report/`).
 
 ## Project Report
 
