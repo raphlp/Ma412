@@ -151,7 +151,7 @@ A detailed technical report (PDF) with:
 -   Results, metrics, and plots
 -   Discussion and limitations
 
-Available in `/report/`.
+Available in the repo.
 
 ---
 
